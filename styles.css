@@ -1,0 +1,110 @@
+/* Variables para un esquema de color Campestre y Alegre */
+:root {
+    --color-fondo-principal: #F0FFF0; /* Blanco Verdoso (cielo claro) */
+    --color-fondo-secundario: #E8F5E9; /* Verde muy claro (pasto claro/algodón) */
+    --color-texto-principal: #384F38; /* Verde Oscuro Profundo (tierra/sombra) */
+    --color-acento: #4CAF50; /* Verde Hoja Brillante */
+    --color-acento-secundario: #03A9F4; /* Celeste Cielo Brillante */
+    --color-sol: #FFEB3B; /* Amarillo Sol Vibrante */
+    --color-borde: #A5D6A7; /* Verde Intermedio Suave */
+    --fuente-principal: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif; /* Fuentes amistosas y alegres */
+    --fuente-secundaria: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos Básicos del Cuerpo */
+body {
+    font-family: var(--fuente-secundaria);
+    background: var(--color-fondo-principal); 
+    color: var(--color-texto-principal);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Encabezados y Párrafos */
+h1 {
+    font-family: var(--fuente-principal); 
+    color: var(--color-acento);
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0 var(--color-sol); /* Sombra de color sol para un efecto 3D alegre */
+}
+
+h2 {
+    font-family: var(--fuente-principal);
+    color: var(--color-acento-secundario);
+    border-bottom: 3px solid var(--color-acento-secundario);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 40px;
+    font-size: 1.8em;
+}
+
+p {
+    margin: 0 auto 25px auto;
+    font-size: 1.1em;
+}
+
+/* Línea Separadora (como una cerca de madera) */
+hr {
+    border: none;
+    height: 10px;
+    background-image: repeating-linear-gradient(
+        90deg,
+        var(--color-borde),
+        var(--color-borde) 10px,
+        transparent 10px,
+        transparent 20px
+    ); /* Rayas verdes suaves */
+    margin: 20px auto;
+    width: 70%;
+}
+
+/* Contenedor Principal */
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+/* Estilo del Iframe (para el Juego) */
+iframe {
+    width: 100%;
+    max-width: 1200px;
+    height: 700px; /* AJUSTA ESTO */
+    border: 6px solid var(--color-acento); /* Marco Verde Hoja */
+    border-radius: 15px;
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para Enlaces (como pequeños insectos en el campo) */
+a {
+    color: var(--color-acento-secundario);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--color-acento);
+    text-decoration: underline;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    iframe {
+        height: 400px; 
+    }
+}
