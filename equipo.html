@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Data Seeder</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6dec13",
+                        "background-light": "#f7f8f6",
+                        "background-dark": "#182210",
+                        "content-light": "#131b0d",
+                        "content-dark": "#ecf3e7",
+                        "subtle-light": "#6c9a4c",
+                        "subtle-dark": "#a3b895",
+                        "border-light": "#ecf3e7",
+                        "border-dark": "#2a3f1a",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark">
+<div class="flex flex-col min-h-screen">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 dark:border-primary/30 px-6 sm:px-10 py-4">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-background-dark dark:text-background-light" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-xl font-bold text-background-dark dark:text-background-light">Data Seeder</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-background-dark/80 dark:text-background-light/80 hover:text-background-dark dark:hover:text-background-light" href="index.html">Inicio</a>
+<a class="text-sm font-medium text-background-dark/80 dark:text-background-light/80 hover:text-background-dark dark:hover:text-background-light" href="juego.html">Juego</a>
+<a class="text-sm font-medium text-background-dark/80 dark:text-background-light/80 hover:text-background-dark dark:hover:text-background-light" href="#">Equipo</a>
+</nav>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12 md:mb-16">
+<h2 class="text-4xl md:text-5xl font-bold mb-4">Sobre nosotros</h2>
+<p class="text-lg text-subtle-light dark:text-subtle-dark max-w-3xl mx-auto">Conoce al equipo dentras de Data Seeder, nosotros somos un grupo de jovenes de la escuela tecnica N°26 "Confederacion Suiza" a los cuales les apasiona la tecnologia y la inovacion. Queremos usar nuestros conocimientos para poder ayudar a otras personas y al mismo tiempo seguir aprendiendo para mejorar constantemente.</p>
+</div>
+<div class="mb-12 md:mb-16">
+<h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">Nuestro equipo</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+<div class="text-center group">
+<div class="relative w-full aspect-square mb-4">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover rounded-full" style="background-image: url('img/equipo/ecuipo.png');"></div>
+<div class="absolute inset-0 bg-primary/20 dark:bg-primary/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-bold text-lg">Kiara Ventura</h4>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Lider</p>
+</div>
+<div class="text-center group">
+<div class="relative w-full aspect-square mb-4">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover rounded-full" style="background-image: url('img/equipo/Ale.jpg');"></div>
+<div class="absolute inset-0 bg-primary/20 dark:bg-primary/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-bold text-lg">Alejandro Luna</h4>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Game Designer</p>
+</div>
+<div class="text-center group">
+<div class="relative w-full aspect-square mb-4">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover rounded-full" style="background-image: url('img/equipo/thiago.jpg');"></div>
+<div class="absolute inset-0 bg-primary/20 dark:bg-primary/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-bold text-lg">Thiago Walfisch Capone</h4>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Art Director</p>
+</div>
+<div class="text-center group">
+<div class="relative w-full aspect-square mb-4">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover rounded-full" style="background-image: url('img/equipo/muriel.jpg');"></div>
+<div class="absolute inset-0 bg-primary/20 dark:bg-primary/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-bold text-lg">Muriel Soiffer</h4>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Developer</p>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">Nuestra mision</h3>
+<div class="bg-primary/10 dark:bg-primary/20 p-8 rounded-lg">
+<p class="text-center text-lg text-content-light dark:text-content-dark">Nuestro equipo participo en la Hackaton de la NASA 2025 donde en la misma elegimos el desafio "NASA Farm Navigators: Using NASA Data Exploration in Agriculture" y tuvimos 48 horas para desarrollar un videojuego donde el jugador usara datos reales proporcionados por la nasa para aprender como se puede usar esta informacion en la agricultura del mundo real. Y de ahi nosostros creamos Data Seeder.</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="border-t border-primary/20 dark:border-primary/30 py-10 px-4 sm:px-6">
+<div class="max-w-6xl mx-auto text-center text-background-dark/60 dark:text-background-light/60">
+<p class="text-sm">© 2025 Data Seeder - Un proyecto para el NASA International Space Apps Challenge.</p>
+<div class="flex justify-center space-x-4 mt-4">
+<a class="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white transition-colors" href="#"><span class="material-icons">rocket_launch</span></a>
+<a class="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white transition-colors" href="#"><span class="material-icons">eco</span></a>
+<a class="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white transition-colors" href="#"><span class="material-icons">code</span></a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

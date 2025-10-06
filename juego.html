@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Data Seeder</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6dec13",
+              "background-light": "#f7f8f6",
+              "background-dark": "#182210",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#182210] dark:text-[#f7f8f6]">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 dark:border-primary/30 px-6 sm:px-10 py-4">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-background-dark dark:text-background-light" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-xl font-bold text-background-dark dark:text-background-light">Data Seeder</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-background-dark/80 dark:text-background-light/80 hover:text-background-dark dark:hover:text-background-light" href="index.html">Inicio</a>
+<a class="text-sm font-medium text-background-dark/80 dark:text-background-light/80 hover:text-background-dark dark:hover:text-background-light" href="#">Juego</a>
+<a class="text-sm font-medium text-background-dark/80 dark:text-background-light/80 hover:text-background-dark dark:hover:text-background-light" href="equipo.html">Equipo</a>
+</nav>
+</header>
+<main class="flex-1">
+<section class="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="flex flex-col items-center gap-8">
+<div class="w-full overflow-hidden rounded-xl shadow-lg shadow-primary/10">
+    <iframe 
+                src="game/index.html" 
+                width="100%" 
+                height="600px" 
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+</div>
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nuestro juego</h2>
+<p class="mt-4 max-w-3xl text-lg leading-relaxed text-[#182210]/80 dark:text-[#f7f8f6]/80">Data Seeder fue desarrollado en godot, programado en GDScript. La mecánica climática central utiliza una simulación basada en datos del repositorio NASA POWER, integrando latitud, longitud y fechas para ofrecer un desafío de gestión climática auténtico.Puedes acceder a nuestro <a href="https://github.com/SPYROBO/Hackathon-of-NASA" class="text-blue-500 hover:text-blue-400 underline dark:text-blue-400 dark:hover:text-blue-300">repositorio de GitHub</a> para ver el código completo del proyecto y su desarrollo.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-primary/20 dark:border-primary/30 py-10 px-4 sm:px-6">
+<div class="max-w-6xl mx-auto text-center text-background-dark/60 dark:text-background-light/60">
+<p class="text-sm">© 2025 Data Seeder - Un proyecto para el NASA International Space Apps Challenge.</p>
+<div class="flex justify-center space-x-4 mt-4">
+<a class="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white transition-colors" href="#"><span class="material-icons">rocket_launch</span></a>
+<a class="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white transition-colors" href="#"><span class="material-icons">eco</span></a>
+<a class="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white transition-colors" href="#"><span class="material-icons">code</span></a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
